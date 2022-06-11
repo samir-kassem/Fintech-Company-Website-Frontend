@@ -1,0 +1,933 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: whitesmoke;
+}
+
+h1, h2, p {
+    margin: 1.6rem 0;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 3.6rem;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 2.4rem;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+img {
+    width: 100%;
+    height: auto
+}
+
+#close_btn {
+    display: none;
+}
+
+section {
+    padding: 100px 0;
+    height: 100vh;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+}
+
+
+header {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.6)), url("images/header.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+nav {
+    padding: 1% 8%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+nav i.fa-solid {
+    display: none;
+}
+
+nav i.fa-solid:hover {
+    cursor: pointer;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 1.6rem;
+}
+
+nav ul li a {
+    transition: all 300ms ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #4caf50;
+}
+
+
+.logo h1 {
+    font-size: 3.6rem;
+    color: #4caf50;
+}
+
+.header_content {
+    width: 50%;
+    position: relative;
+    top: 16%;
+    left: 8%;
+    color: whitesmoke;
+}
+
+form {
+    margin: 2.4rem 0;
+}
+
+input {
+    font-size: 1.8rem;
+}
+
+input[type=text],
+input[type=email] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 1.2rem 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    transition: all 200ms ease-in-out;
+}
+
+
+header input[type=text]:focus,
+header input[type=email]:focus {
+    box-shadow: 0 0 10px 5px #4caf50;
+    outline: none;
+}
+
+input::placeholder {
+    font-size: 1.6rem;
+    color: #ccc;
+}
+
+input[type=submit] {
+    width: 50%;
+    background: #4caf50;
+    border: none;
+    padding: 1.4rem 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all 300ms ease-in-out;
+}
+
+
+header input[type=submit]:hover {
+    color: #4caf50;
+    background-color: #333;
+    box-shadow: 0 0 10px 5px #4caf50;
+}
+
+/*About Section*/
+
+#about {
+    background: #f1f1f1;
+    padding-top: 50px;
+}
+
+#about h1 {
+    margin-bottom: 50px;
+}
+
+.row {
+    align-items: flex-start;
+}
+
+.about_left,
+.about_middle, 
+.about_right {
+    flex-basis: 30%;
+    padding: 1.6rem;
+}
+
+.about_left img {
+    transition: 400ms all ease;    
+}
+
+#about p {
+    font-size: 1.5rem;
+}
+
+a.btn {
+    background: #4caf50;
+    color: #fff;
+    padding: .8rem 1.6rem;
+    display: inline-block;
+    border: none;
+    border-radius: 1rem;
+    margin: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 300ms ease-in-out;
+}
+
+a.btn:hover {
+    cursor: pointer;
+    background: #222;
+    color: #4caf50;
+    transform: scale(1.1);
+}
+
+.text_content {
+    height: 37rem;
+}
+
+
+#about h1 {
+    font-family: "Dancing Script", cursive;
+    display: block;
+    font-size: 8rem;
+    width: 100%;
+    text-align: center;
+}
+
+#about2 {
+    background-color: #333;
+    color: whitesmoke;
+}
+
+.about2_left {
+    flex-basis: 50%;
+}
+
+.about2_right {
+    flex-basis: 30%;
+}
+
+#about2 .card {
+    background-color: #dcdcdc;
+    padding: 3rem 8rem;
+    color: #222;
+    text-align: center;
+    margin: 1.6rem;
+    border-radius: 10px;
+    transition: all 400ms ease-in-out;
+}
+
+#about2 .card:hover {
+    background-color: #000;
+    box-shadow: 0 0 10px 5px #4caf50;
+    color: #fff;
+}
+
+/*Process Section*/
+
+#process .row {
+    justify-content: center;
+}
+
+.process-content {
+    margin-top: 100px;
+}
+
+#process .row .process-content .progress-bar {
+    width: 80%;
+    height: 2px;
+    background-color: #222;
+    margin: auto;
+    position: relative;
+}
+
+.progress-bar .c1,
+.progress-bar .c2,
+.progress-bar .c3 {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #222;
+    position: absolute;
+}
+
+.progress-bar .c1 {
+    top: -.8rem;
+    left: 3rem;
+}
+
+.progress-bar .c2 {
+    top: -.8rem;
+    left: 50%;
+}
+
+.progress-bar .c3 {
+    top: -.8rem;
+    right: 3rem;
+}
+
+
+.box1, .box2, .box3 {
+    padding: 1.8rem;
+}
+
+.box2 {
+    text-align: center;
+}
+
+.box3 {
+    text-align: right;
+}
+
+.process-content h2 {
+    color: #4caf50;
+}
+
+#testimony {
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    position: relative;
+}
+
+#testimony .row {
+    align-items: center;
+    justify-content: center;
+    flex-basis: 50%;
+    margin: 10px;
+}
+
+#testimony .test {
+    flex-basis: 50%;
+    background-color: #505050;
+    padding: 2rem 2rem;
+    border-radius: 20px;
+    margin: 2rem;
+    transition: 3s ease all;
+}
+
+.test p {
+    font-size: 1.5rem;
+}
+
+.test p {
+    font-size: 1.5rem;
+}
+
+#testimony .image {
+    height: 80px;
+    width: 80px;
+    margin: auto;
+}
+
+#testimony img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.icons i {
+    font-size: 2rem;
+    animation: stars 1.5s infinite ease;
+}
+
+.icons:hover i {
+    color: gold;
+    animation: none;
+}
+
+@keyframes stars {
+    0% {
+        color: #fff;
+    }
+    50% {
+        color: gold;
+    }
+    100% {
+        color: #fff;
+    }
+}
+
+#testimony div.click {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+#testimony div.click:hover {
+    background-color: #4caf50;
+}
+
+.rotation {
+    transform: rotateZ(360deg);
+}
+
+#contact .row {
+    justify-content: center;
+}
+
+#contact form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact form input {
+    width: 50%;
+    outline: 2px solid #222;
+}
+
+#contact textarea {
+    width: 50%;
+    height: 200px;
+    padding: 12px 20px; 
+    font-size: 1.3rem;
+    resize: none;
+    color: #222;
+    margin: 1.2rem 0;
+    font-family: "Poppins", sans-serif;
+    outline: 2px solid #222;
+    border-radius: 20px;
+    animation: pulse 1.5s infinite;
+}
+
+#contact textarea:focus {
+    animation: none;
+}
+
+#contact form input[type=submit] {
+    outline: inherit;
+    margin-top: 2rem;
+}
+
+
+#contact form input[type=submit]:hover {
+    background-color: #222;
+    color: #4caf50;
+}
+
+ @keyframes pulse {
+        0% {
+            transform: scale3d(1, 1, 1);
+        }
+        
+        50% {
+            transform: scale3d(1.05, 1.05, 1.05);
+        }
+        
+        100% {
+            transform: scale(1, 1, 1);
+        }
+    }
+
+
+#footer {
+    background-color: #222;
+    
+}
+
+#footer .row {
+    justify-content: center;
+}
+
+#footer .row h2 {
+    color: #fff;
+    font-weight: 500;
+}
+
+#footer #heart {
+    color: crimson;
+    font-size: 3rem;
+}
+
+#footer #brain {
+    color: #4caf50;
+    font-size: 3rem;
+}
+
+
+
+@media (max-width: 768px){
+    
+    section {
+        height: auto;
+    }
+    
+    .row {
+        flex-direction: column;
+    }
+    
+    nav {
+        flex-direction: column;
+        position: relative;
+    }
+    
+    nav i.fa-solid {
+        display: block;
+        position: absolute;
+        top: 18px;
+        right: 3.2rem;
+    }
+    
+    nav ul {
+        display: block;
+        position: absolute;
+        width: 50%;
+        height: 100vh;
+        top: 0;
+        left: -100%;
+        z-index: 10;
+        padding: 30% 0 0 0;
+        background-color: #000;
+        opacity: .9;
+        box-shadow: 0 0 10px 10px #4caf50;
+        transition: 400ms all ease-in-out;
+    }
+    
+    nav ul li {
+        display: block;
+        text-align: center;
+        padding: 2% 0;
+        margin: 0;
+        width: 100%;
+        transition: 300ms all ease-in-out;
+    }
+    
+    nav ul li:hover {
+        background: #4caf50;
+    }
+    
+    nav ul li:hover a {
+        color: #fff;
+    }
+    
+    nav ul li a {
+        font-size: 2.5rem;
+        color: #fff;
+    }
+    
+    .show_menu {
+        display: block;
+        left: 0;
+    }
+    
+    #close_btn {
+        opacity: 1;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 2rem;
+        padding: .5rem;
+        font-size: 4rem;
+        background: transparent;
+        color: #fff;
+        border: none;
+        transition: 300ms all linear;
+    }
+    
+    #close_btn:hover {
+        transform: rotateZ(90deg);  
+        cursor: pointer;
+    }
+    
+    
+    .header_content {
+        width: 100%;
+        text-align: center;
+        top: 16px;
+        left: 0;
+        padding: 0 1rem;
+    }
+    
+    input[type=text],
+    input[type=email],
+    input[type=submit]
+    {
+        width: 80%;
+        margin: 1.2rem auto;
+    }
+
+    .about_left, 
+    .about_middle, 
+    .about_right {
+        margin-bottom: 5%;
+        padding-top: 0;
+    }
+    
+    .text_content {
+        height: auto;
+    }
+    
+    
+    .about2_left p {
+        font-size: 1.5rem;
+    }
+
+    .about2_right {
+        margin: 0 auto;
+    }
+    
+    .about2_right .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    #about2 .about2_right .row .card {
+        flex-basis: 50%;
+        padding: 10%;
+    }
+    
+    #about2 .about2_right .row .card h2 {
+        font-size: 2rem;
+    }
+    
+    #process .row h1 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    
+    #process .progress-bar {
+        display: none;
+    }
+    
+    .process-content {
+        margin-top: 2rem;
+    }
+    
+    .process-content .row div {
+        text-align: center;
+        background-color: #333;
+        padding: 2rem 3rem;
+        margin: 2rem;
+        border-radius: 20px;
+        color: #fff;
+    }
+    
+    .process-content .row div h2 {
+        font-size: 2.5rem;
+    }
+    
+    .process-content .row div p {
+        font-size: 1.5rem;
+    }
+    
+    #testimony div.click {
+        display: none;
+    }
+    
+    #contact h1 {
+        text-align: center;
+        width: 100%;
+    }
+    
+    #contact form input {
+        width: 100%;
+    }
+    
+    #contact form textarea {
+        width: 100%;
+        animation: pulse 2s ease infinite forwards;
+        transition: all 300ms ease;
+    }
+    
+    @keyframes pulse {
+        0% {
+            transform: scale3d(1, 1, 1);
+        }
+        
+        50% {
+            transform: scale3d(1.05, 1.05, 1.05);
+        }
+        
+        100% {
+            transform: scale(1, 1, 1);
+        }
+    }
+    
+    #footer .row {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+   
+    
+    
+    
+}
+
+
+@media (min-width: 768px) and (max-width: 1000px){
+    
+    .row {
+        flex-direction: column;
+    }
+    
+    nav {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    
+    nav .logo h1 {
+        font-size: 5rem;
+    }
+    
+    nav ul li a {
+        font-size: 2.2rem;
+    }
+    
+    
+    .header_content {
+        width: 80%;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    
+    .header_content_text h1 {
+        font-size: 3rem;
+    }
+    
+    .header_content_text p {
+        font-size: 1.5rem;
+    }
+    
+    #header_form input {
+        width: 100%;
+    }
+    
+    #header_form input[type=submit] {
+        width: 50%;
+        margin: 0 25%;
+    }
+    
+    section {
+        height: auto;
+    }
+    
+    #about .text_content {
+        height: auto;
+        margin-bottom: 25px;
+    }
+    
+    section#about2 {
+        padding-top: 50px;
+    }
+    
+    .about2_left {
+        margin-bottom: 30px;
+    }
+    
+    #about2 .about2_left h2 {
+        font-size: 2rem;
+    }
+    
+    #about2 .about2_left p {
+        font-size: 1.5rem;
+    }
+    
+    #about2 .about2_left h1 {
+        font-size: 3rem;
+    }
+    
+    .about2_right {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .about2_right .row:nth-child(1) {
+        padding-right: 0;
+        align-items: flex-end;
+    }
+    
+    .about2_right .card {
+        width: 70%;
+        margin: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #process {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .process-content {
+        margin-top: 5%;
+    }
+    
+    #process div:nth-child(1) h1 { 
+        margin: 0 auto;
+    }
+    
+    .progress-bar {
+        display: none;
+    }
+    
+    .process-content div:nth-child(2) div {
+        margin: 20px;
+    }
+    
+    .box1, .box2, .box3 {
+        background-color: #333;
+        color: #fff;
+        padding: 30px;
+        border-radius: 20px;
+        text-align: center;
+    }
+    
+    #rotate_btn {
+        display: none;
+    }
+    
+    #testimony .row {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #testimony .test {
+        height: 400px;
+        flex-basis: 50%;
+        padding-right: 5%;
+        padding-left: 5%;
+        margin: 0 10px 0 0;
+    }
+    
+    #testimony .test h2 {
+        font-size: 2rem;
+    }
+    
+    #contact .row:nth-child(1) {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    #contact .row:nth-child(2) input {
+        width: 80%;
+    }
+    
+    #contact .row:nth-child(2) textarea {
+        width: 80%;
+    }
+
+    #footer .row {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
